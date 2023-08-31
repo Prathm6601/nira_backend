@@ -9,6 +9,7 @@ pipeline {
                           branches: [[name: 'main']],
                           userRemoteConfigs: [[url: 'https://github.com/Prathm6601/nira_demo.git']],
                           credentialsId: 'git-cred'])
+                 sh 'git branch'
             }
         }
         
